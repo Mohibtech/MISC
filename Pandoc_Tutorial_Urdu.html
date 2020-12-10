@@ -1,0 +1,170 @@
+<h2 dir="rtl" style="text-align: right;">&nbsp;ای کتاب بنانے کا طریقہ</h2>
+<p dir="rtl" style="text-align: right;"><br /></p>
+<p dir="rtl" style="text-align: right;">ای کتاب بنانے کے لیے سب سے پہلے پین ڈاک (pandoc) ڈاؤن لوڈ کرکے انسٹال کرنے کی
+    ضرورت ہے۔&nbsp;</p>
+<p dir="rtl" style="text-align: right;"><a href="https://pandoc.org/installing.html" target="_blank">پین ڈاک (pandoc)
+        ڈاؤن لوڈ لنک</a></p>
+<p dir="rtl" style="text-align: right;"><br /></p>
+<h3 dir="rtl" style="text-align: right;">کمانڈ لائن سے کمانڈ چلانا</h3>
+<p dir="rtl" style="text-align: right;">کمانڈ لائن پر جا کر پین ڈاک کو چلا سکتے ہیں۔ کمانڈ لائن پر جانے کے طریقے مندرجہ
+    ذیل ہو سکتے ہیں۔</p>
+<p dir="rtl" style="text-align: right;">اگر ونڈوز 10 ہے تو ونڈوز سٹارٹ کے بٹن کے بالکل ساتھ سرچ کے بٹن کو دبائیں اور
+    لکھیں</p>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">powershell
+cmd
+</pre>
+
+<p dir="rtl" style="text-align: right;">پاور شیل کا استعمال بہتر رہے گا۔ پاور شیل پر جانے کے بعد دستاویزات کو کنورٹ کرنے
+    کے لیے جو کمانڈ لکھنی ہیں ان کا جائزہ پیش خدمت ہے۔</p>
+
+
+<h3 dir="rtl" style="text-align: right;">سادہ ٹیکسٹ فائل سے ای پب () فارمیٹ میں کنورٹ کرنا</h3>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc mybook.txt -o mybook.epub
+</pre>
+<p dir="rtl" style="text-align: right;">پین ڈاک کے بعد سادہ ٹیکسٹ فائل کا نام اور پھر آؤٹ پٹ کا سوئچ اور ای پب فائل کا
+    نام&nbsp;</p>
+
+<p dir="rtl" style="text-align: right;"><br /></p>
+
+<h3 dir="rtl" style="text-align: right;">مائیکروسافٹ ورڈ سے مارک ڈاؤن میں کنورٹ کرنا&nbsp;</h3>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc wordDoc.doc -o myMarkDownFile.md
+</pre>
+
+<p dir="rtl" style="text-align: right;"><br /></p>
+<h3 dir="rtl" style="text-align: right;">مارک ڈاؤن سے ورڈ فائل بنانا</h3>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc Cindrella.md -o Cindrella.doc
+</pre>
+<p dir="rtl" style="text-align: right;"><br /></p>
+<h3 dir="rtl" style="text-align: right;">مارک ڈاؤن سے ای پب فارمیٹ میں ای کتاب بنانا</h3>
+<div dir="rtl" style="text-align: right;">ایک مارک ڈاؤن فائل سے ای پب فائل بنانا</div>
+<p dir="rtl" style="text-align: right;"></p>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc hayatSChili.md -o HayatSheikhChilli.epub
+</pre>
+<div style="text-align: right;"><br /></div>
+<div style="text-align: right;"><br /></div>
+<h4 dir="rtl" style="text-align: right;">مارک ڈاؤن کی زیادہ فائلوں کی مدد سے ایک ای پب آؤٹ پٹ
+    فائل بنانا</h4>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc -o progit.epub title.txt \
+  01-introduction/01-chapter1.markdown \
+  02-git-basics/01-chapter2.markdown \
+  03-git-branching/01-chapter3.markdown \
+  04-git-server/01-chapter4.markdown \
+  05-distributed-git/01-chapter5.markdown \
+  06-git-tools/01-chapter6.markdown \
+  07-customizing-git/01-chapter7.markdown \
+  08-git-and-other-scms/01-chapter8.markdown \
+  09-git-internals/01-chapter9.markdown
+</pre>
+<h3 dir="rtl" style="text-align: right;">ای پب فائل میں فانٹ شامل کرنا</h3>
+<div><br /></div>
+<h3 dir="rtl" style="text-align: right;">میٹا ڈیٹا فائل کے ساتھ ای کتاب (epub) فارمیٹ بنانا</h3>
+<div style="text-align: right;"><br /></div>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc -s metadata-epub.yaml hayatSChili.md -o HayatSheikhChilli.epub
+</pre>
+<h3 dir="rtl" style="text-align: right;">ای پب فائل میں فانٹ شامل کرنا</h3>
+<div><br /></div>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">pandoc -s metadata-epub.yaml hayatSChili.md -o HSC_MehrNastaliq.epub --epub-embed-font="Mehr-Nastaliq-Web-version-1.0-beta.otf"
+</pre>
+<h4 dir="rtl" style="text-align: left;">metadata-epub.yaml</h4>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">---
+language: ur-PK
+title: Hayaat Sheikh Chilli
+author: Sajjad Hussain
+rights:
+date: 27-09-2020
+toc-title: "فہرست عنوانات"
+toc: true
+cover-image: Hayat-SC-cover.png
+css: epub.css
+page-progression-direction: rtl
+---
+</pre>
+<h4> epub.css</h4>
+<div><br /></div>
+<pre
+    style="background: rgb(255, 255, 255); border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; line-height: 125%; margin: 0px; overflow: auto; width: auto;">@charset "UTF-8";
+
+@font-face {
+font-family: Mehr Nastaliq Web;
+font-style: normal;
+font-weight: normal;
+src: local("Mehr Nastaliq Web"),
+url("https://drive.google.com/file/d/1Rgox78ZFiai_GygIgjX6ROrvuwpYJOFT"),
+url("Mehr-Nastaliq-Web-version-1.0-beta.otf");
+}
+
+@font-face {
+font-family: Jameel Noori Nastaleeq;
+font-style: normal;
+font-weight: normal;
+src: local("Jameel Noori Nastaleeq"),
+url("Jameel Noori Nastaleeq Regular.ttf");
+}
+
+html {
+direction: rtl;
+}
+
+body {
+direction: rtl;
+font-family: Jameel Noori Nastaleeq, Mehr Nastaliq Web, Calibri, Arial, sans-serif;
+text-align: right;
+margin-top: 0px;
+margin-left: 1px;
+margin-right: 1px;
+}
+
+/* titles */
+h1 {
+font-weight: bold;
+font-size: 200%;
+margin: 0em;
+}
+
+h2 {
+font-size: 135%;
+margin: 0em;
+}
+
+article h1 {
+font-size: 120%;
+margin: 1.71em 0 1.14em 0;
+}
+
+article h2 {
+font-size: 110%;
+margin: 1.23em 2.15em 0.62em 10.77em;
+}
+
+/* content */
+p {
+text-align: justify;
+}
+
+strong {
+font-weight: bold;
+}
+
+/* Cover and titlepage (fullpage image) */
+figure.fullpage {
+max-height: 100%;
+margin: 0;
+padding: 0;
+}
+
+img {
+max-height: 100%;
+margin: 0;
+padding: 0;
+}
+</pre>
+<div><br /></div>

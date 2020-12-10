@@ -1,0 +1,73 @@
+@font-face {
+font-family: Mehr Nastaliq Web;
+font-style: normal;
+font-weight: normal;
+src: local("Mehr Nastaliq Web"),
+url("https://drive.google.com/file/d/1Rgox78ZFiai_GygIgjX6ROrvuwpYJOFT"),
+url("Mehr-Nastaliq-Web-version-1.0-beta.otf");
+}
+
+@font-face {
+font-family: Jameel Noori Nastaleeq;
+font-style: normal;
+font-weight: normal;
+src: local("Jameel Noori Nastaleeq"),
+url("Jameel Noori Nastaleeq Regular.ttf");
+}
+
+html {
+direction: rtl;
+}
+
+body {
+direction: rtl;
+font-family: Jameel Noori Nastaleeq, Mehr Nastaliq Web, Calibri, Arial, sans-serif;
+text-align: right;
+margin-top: 0px;
+margin-left: 1px;
+margin-right: 1px;
+}
+
+/* titles */
+h1 {
+font-weight: bold;
+font-size: 200%;
+margin: 0em;
+}
+
+h2 {
+font-size: 135%;
+margin: 0em;
+}
+
+article h1 {
+font-size: 120%;
+margin: 1.71em 0 1.14em 0;
+}
+
+article h2 {
+font-size: 110%;
+margin: 1.23em 2.15em 0.62em 10.77em;
+}
+
+/* content */
+p {
+text-align: justify;
+}
+
+strong {
+font-weight: bold;
+}
+
+/* Cover and titlepage (fullpage image) */
+figure.fullpage {
+max-height: 100%;
+margin: 0;
+padding: 0;
+}
+
+img {
+max-height: 100%;
+margin: 0;
+padding: 0;
+}
